@@ -1,0 +1,29 @@
+﻿# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data and model folders (optional — remove if you want them tracked)
+data/
+models/
+
+# Large dataset formats
+*.nc
+*.csv
+*.tsv
+*.parquet
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.idea/
