@@ -1,45 +1,60 @@
-# Climate Anomaly Prediction & Analysis
+Here’s the same README draft from before, but with all emojis removed so it’s clean and professional.
 
-## Overview
-This project uses historical climate datasets and machine learning to predict global temperature anomalies and assess model performance over time.  
-It integrates Berkeley Earth and HadCRUT5 data, engineers lagged and rolling features, and benchmarks multiple models — including HistGradientBoosting, Random Forest, XGBoost, and a Residual Boosted hybrid — to identify the most accurate and stable predictor.
+Capstone 2 – Climate Anomaly Detection & Ensemble Modeling
+Problem Statement
+Climate variability is accelerating, with temperature and precipitation anomalies becoming more frequent and severe.
+This project answers the question:
+“How can we detect, quantify, and visualize climate anomalies across decades using ensemble modeling of global datasets?”
+Why it matters:
+- Early detection of anomalies supports policy decisions and resource allocation.
+- Ensemble modeling reduces uncertainty by combining multiple climate models.
+- Clear visualizations help non-technical stakeholders grasp the urgency.
 
-## Key Features
-- **Data Integration**: Combines Berkeley Earth and HadCRUT5 datasets into a unified annual anomaly record.
-- **Feature Engineering**: Decade grouping, lag features, rolling statistics, smoothed lags, and normalization.
-- **Model Benchmarking**: Hyperparameter tuning with GridSearchCV; evaluation of four model architectures.
-- **Performance Analysis**: Decade‑wise accuracy trends, residual bias detection, and ensemble averaging.
-- **Recent Trends**: Threshold tracking (2016–2025) shows a slight shift toward moderate anomalies while high anomalies remain stable.
+Approach
+This project uses:
+- Ensemble Modeling: Combining multiple ML models (Random Forest, HistGradientBoosting, XGBoost) for robust predictions.
+- Anomaly Detection: Quantile-based binning and adaptive thresholds to flag unusual climate patterns.
+- NetCDF/xarray Workflows: Efficient handling of large-scale climate datasets.
+- Diagnostic Visualization: Residual plots, threshold tracking, and decade-wise accuracy charts.
+- Reproducible Pipelines: Modular Python scripts with clear inline documentation.
 
-## Results
-- **Best Model**: XGBoost (~99.96% accuracy in the 2020s).
-- **Stability**: Residuals remain small across decades; early‑period divergence linked to sparse historical data.
-- **Trend Insight**: Low anomalies decreased slightly, moderate anomalies increased, high anomalies steady.
+Results
+Below is a sample of the key findings from the model runs:
+|  |  | 
+|  |  | 
+|  |  | 
+|  |  | 
 
 
-## Author
-Syeed — IT Analyst & Technical Support Specialist with expertise in climate data analysis, automation, and workflow optimisation
+Example Visualization:
+(Replace with your actual plot)
+anomaly_map.png
 
-## License
-This project is licensed under the MIT License — see the LICENSE file for details.
+Next Steps
+- Integrate ERA5 reanalysis data for higher spatial resolution.
+- Add seasonal anomaly tracking to detect short-term climate extremes.
+- Deploy as an interactive dashboard for policymakers.
+- Automate GitHub Actions to re-run models when new data is available.
 
-## Installation
-```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
+Usage Instructions
+1. Clone the repository
+git clone https://github.com/SyeedHamid/Capstone-2.git
+cd Capstone-2
+
+
+2. Create a virtual environment
+python -m venv .venv
+source .venv/bin/activate   # Mac/Linux
+.venv\Scripts\activate      # Windows
+
+
+3. Install dependencies
 pip install -r requirements.txt
 
-**Usage**
-jupyter notebook "Capstone 2.ipynb"
 
-**Requirements**
-Core packages:
-pandas
-numpy
-xarray
-netCDF4
-scikit-learn
-xgboost
-matplotlib
-seaborn
+4. Run the pipeline
+python src/run_pipeline.py
+
+
+
 
