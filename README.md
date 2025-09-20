@@ -12,11 +12,11 @@ This project answers the question:
 **Approach:**
 
 This project uses:
-- Ensemble Modeling: Combining multiple ML models (Random Forest, HistGradientBoosting, XGBoost) for robust predictions.
-- Anomaly Detection: Quantile-based binning and adaptive thresholds to flag unusual climate patterns.
-- NetCDF/xarray Workflows: Efficient handling of large-scale climate datasets.
-- Diagnostic Visualization: Residual plots, threshold tracking, and decade-wise accuracy charts.
-- Reproducible Pipelines: Modular Python scripts with clear inline documentation.
+- **Ensemble Modeling:** Combining multiple ML models (Random Forest, HistGradientBoosting, XGBoost) for robust predictions.
+- **Anomaly Detection:** Quantile-based binning and adaptive thresholds to flag unusual climate patterns.
+- **NetCDF/xarray Workflows:** Efficient handling of large-scale climate datasets.
+- **Diagnostic Visualization:** Residual plots, threshold tracking, and decade-wise accuracy charts.
+- **Reproducible Pipelines:** Modular Python scripts with clear inline documentation.
 
 **Results:**
 
