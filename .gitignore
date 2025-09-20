@@ -1,29 +1,26 @@
-﻿# Virtual environment
-.venv/
-venv/
-
-# Python cache
+# Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
+*.egg-info/
+dist/
+build/
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+# Virtual environments
+.venv/
+env/
+venv/
 
-# Data and model folders (optional — remove if you want them tracked)
-data/
-models/
-
-# Large dataset formats
-*.nc
+# Data
 *.csv
 *.tsv
-*.parquet
+*.nc
+*.h5
+*.npy
+*.npz
 
-# OS-specific files
-.DS_Store
-Thumbs.db
+# Jupyter
+.ipynb_checkpoints/
 
-# IDE settings
+# IDE
 .idea/
+*.iml
