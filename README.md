@@ -1,4 +1,4 @@
-**Capstone 2 – Climate Anomaly Detection & Ensemble Modeling**
+**Capstone 2 –From Signal Extraction to Sector Forecasting — Climate Risk Modeling with XGBoost and Ensemble Diagnostics**
 
 Climate variability is accelerating, with temperature and precipitation anomalies becoming more frequent and severe.
 This project answers the question:
